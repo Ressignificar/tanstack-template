@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA da Quebrada - Automação WhatsApp Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pe-red': '#DC143C',
+                        'pe-blue': '#1E90FF',
+                        'pe-yellow': '#FFD700',
+                        'pe-green': '#32CD32'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #DC143C, #1E90FF, #FFD700); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .neon-glow { box-shadow: 0 0 20px rgba(30, 144, 255, 0.6); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 overflow-x-hidden">
+    <!-- Header -->
+    <header class="gradient-bg py-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-10 left-10 w-20 h-20 bg-pe-red rounded-full opacity-30"></div>
+            <div class="absolute top-32 right-20 w-16 h-16 bg-pe-blue rounded-full opacity-40"></div>
+            <div class="absolute bottom-10 left-1/3 w-12 h-12 bg-pe-yellow rounded-full opacity-35"></div>
+            <div class="absolute top-20 right-1/3 w-8 h-8 bg-pe-green rounded-full opacity-30"></div>
+            <div class="absolute bottom-20 right-10 w-14 h-14 bg-pe-red rounded-full opacity-25"></div>
+        </div>
+        <!-- Bandeira de Pernambuco SVG -->
+        <div class="absolute top-4 left-4 opacity-30">
+            <svg width="60" height="40" viewBox="0 0 60 40" class="float-animation">
+                <rect width="60" height="13.33" fill="#1E90FF"/>
+                <rect y="13.33" width="60" height="13.33" fill="#FFFFFF"/>
+                <rect y="26.66" width="60" height="13.33" fill="#DC143C"/>
+                <circle cx="30" cy="20" r="8" fill="#FFD700"/>
+                <text x="30" y="24" text-anchor="middle" font-size="6" fill="#DC143C" font-weight="bold">PE</text>
+            </svg>
+        </div>
+        <!-- La Ursa SVG -->
+        <div class="absolute top-4 right-4 opacity-40">
+            <svg width="50" height="50" viewBox="0 0 50 50" class="float-animation" style="animation-delay: 1s;">
+                <circle cx="25" cy="25" r="20" fill="#8B4513"/>
+                <circle cx="20" cy="20" r="3" fill="#000"/>
+                <circle cx="30" cy="20" r="3" fill="#000"/>
+                <path d="M15 30 Q25 35 35 30" stroke="#000" stroke-width="2" fill="none"/>
+                <circle cx="15" cy="15" r="5" fill="#8B4513"/>
+                <circle cx="35" cy="15" r="5" fill="#8B4513"/>
+                <text x="25" y="45" text-anchor="middle" font-size="6" fill="#FFD700" font-weight="bold">URSA</text>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-black text-shadow mb-4 float-animation">
+                🤖 IA VIRADA NUM MÓI DE CUENTU
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold text-shadow mb-2">
+                AUTOMAÇÃO WHATSAPP BUSINESS • RECIFE E REGIÃO
+            </p>
+            <p class="text-lg font-bold text-shadow text-pe-yellow">
+                🏴 PERNAMBUCO MEU PAÍS 🏴
+            </p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 text-pe-red">
+                    🚀 SEU NEGÓCIO PERDENDO CLIENTE POR NÃO RESPONDER NO WHATS?
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 text-gray-700">
+                    Eu <span class="text-pe-blue font-bold">AJEITO</span> isso pra você em <span class="text-pe-green font-bold">MENOS DE 1 DIA!</span>
+                </p>
+                <div class="bg-gradient-to-r from-pe-red to-pe-blue p-8 rounded-3xl neon-glow pulse-animation">
+                    <p class="text-2xl md:text-4xl font-black text-white text-shadow">
+                        APENAS R$ 47 NO PIX
+                    </p>
+                    <p class="text-lg mt-2">SEM MENSALIDADE • SEM BUROCRACIA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pe-yellow">
+                🤖 COMO EU AJEITO SEU WHATSAPP
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-red hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">📱</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-red">WhatsApp Business Ajeitado</h4>
+                    <p class="text-gray-600">Instalação e configuração total no seu celular</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-blue hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-blue">Mensagens Automáticas</h4>
+                    <p class="text-gray-600">Saudação e fora do horário no automático</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-green hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">⚡</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-green">Respostas Rápidas</h4>
+                    <p class="text-gray-600">Desenrrola seu atendimento na correria</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-yellow hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">📋</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-yellow">Catálogo Organizado</h4>
+                    <p class="text-gray-600">Seus serviços e produtos na palma da mão</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-red hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">🎨</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-red">Perfil Profissional</h4>
+                    <p class="text-gray-600">Foto, bio e status que vendem</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border-l-4 border-pe-blue hover:transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-3xl mb-4">📅</div>
+                    <h4 class="text-xl font-bold mb-3 text-pe-blue">Agendamento Direto</h4>
+                    <p class="text-gray-600">Cliente marca direto pelo WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pe-green">
+                🚀 BENEFÍCIOS NA HORA!
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-center space-x-4 bg-gray-50 p-6 rounded-2xl shadow-lg">
+                    <div class="text-4xl">📲</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-pe-green">Atendimento 24h Ajeitado</h4>
+                        <p class="text-gray-600">Com mensagens automáticas</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-gray-50 p-6 rounded-2xl shadow-lg">
+                    <div class="text-4xl">💬</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-pe-red">Profissionalismo</h4>
+                        <p class="text-gray-600">Mensagens e retorno rápido</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-gray-50 p-6 rounded-2xl shadow-lg">
+                    <div class="text-4xl">💼</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-pe-yellow">Mais Organização</h4>
+                        <p class="text-gray-600">Mais tempo pro presencial</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-gray-50 p-6 rounded-2xl shadow-lg">
+                    <div class="text-4xl">🚀</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-pe-blue">Uso Imediato</h4>
+                        <p class="text-gray-600">Comece a usar no mesmo dia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pe-red">
+                🛌 PRA QUEM EU DESENROLO ESSE SERVIÇO
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
+                <div class="bg-gradient-to-b from-pe-red to-pe-blue p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">💇‍♀️</div>
+                    <p class="font-semibold">Salões de Beleza</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-blue to-pe-yellow p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">✂️</div>
+                    <p class="font-semibold">Barbearias</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-yellow to-pe-green p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">👗</div>
+                    <p class="font-semibold">Lojas de Roupa</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-green to-pe-red p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">💆‍♀️</div>
+                    <p class="font-semibold">Estéticas</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-red to-pe-blue p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">💆</div>
+                    <p class="font-semibold">Massagem</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-blue to-pe-yellow p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <p class="font-semibold">Tatuagem</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-yellow to-pe-green p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">🏪</div>
+                    <p class="font-semibold">Negócios Locais</p>
+                </div>
+                <div class="bg-gradient-to-b from-pe-green to-pe-red p-4 rounded-2xl">
+                    <div class="text-3xl mb-2">📱</div>
+                    <p class="font-semibold">Que Usam WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pe-green">
+                ✅ QUEM JÁ AJEITOU APROVOU
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-pe-green shadow-lg">
+                    <p class="text-lg mb-4 italic text-gray-700">
+                        "Depois que ajeitei o atendimento automático, parei de perder clientes fora do horário e consegui agendar direto pelo WhatsApp! Valeu muito a pena."
+                    </p>
+                    <p class="font-bold text-pe-green">- Salão da Jéssica, Boa Viagem</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-pe-red shadow-lg">
+                    <p class="text-lg mb-4 italic text-gray-700">
+                        "A configuração foi toda desenrrolada no meu próprio celular. Muito simples e ajudou demais."
+                    </p>
+                    <p class="font-bold text-pe-red">- Barbearia do Marcos, Casa Amarela</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pe-yellow">
+                📍 AJEITO PRA TODO RECIFE E REGIÃO
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto text-center">
+                <div class="bg-pe-red p-4 rounded-xl font-semibold">📍 Boa Viagem</div>
+                <div class="bg-pe-blue p-4 rounded-xl font-semibold">📍 Casa Amarela</div>
+                <div class="bg-pe-yellow p-4 rounded-xl font-semibold text-gray-900">📍 Espinheiro</div>
+                <div class="bg-pe-green p-4 rounded-xl font-semibold">📍 Graças</div>
+                <div class="bg-pe-red p-4 rounded-xl font-semibold">📍 Aflitos</div>
+                <div class="bg-pe-blue p-4 rounded-xl font-semibold">📍 Tamarineira</div>
+                <div class="bg-pe-yellow p-4 rounded-xl font-semibold text-gray-900">📍 Imbiribeira</div>
+                <div class="bg-pe-green p-4 rounded-xl font-semibold">📍 Pina</div>
+                <div class="bg-pe-red p-4 rounded-xl font-semibold">📍 Olinda</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-pe-yellow rounded-full opacity-30 float-animation"></div>
+            <div class="absolute bottom-20 right-20 w-24 h-24 bg-pe-green rounded-full opacity-40 float-animation" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-pe-red rounded-full opacity-25 float-animation" style="animation-delay: 2s;"></div>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h3 class="text-4xl md:text-5xl font-black mb-8 text-shadow">
+                ✉️ VAMOS AJEITAR AGORA MESMO!
+            </h3>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white text-gray-900 p-8 rounded-3xl neon-glow mb-8">
+                    <div class="text-6xl mb-4">📱</div>
+                    <p class="text-2xl font-bold mb-2">WhatsApp:</p>
+                    <a href="https://wa.me/5581998385434" class="text-3xl font-black text-pe-red hover:text-pe-blue transition-colors">
+                        (81) 9 9838-5434
+                    </a>
+                </div>
+                <div class="bg-pe-green text-white p-6 rounded-2xl pulse-animation">
+                    <p class="text-xl font-bold">💳 PAGAMENTO FÁCIL VIA PIX</p>
+                    <p class="text-lg mt-2">Vamos ajeitar seu atendimento e desenrrolar suas vendas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-2xl font-bold text-pe-red mb-2">🤖 IA VIRADA NUM MÓI DE CUENTU</p>
+            <p class="text-gray-400">Automação WhatsApp Business • Recife e Região</p>
+            <p class="text-sm text-pe-yellow mt-2 font-bold">🏴 PERNAMBUCO MEU PAÍS 🏴</p>
+            <p class="text-sm text-gray-500 mt-2">Desenrrolando negócios locais com tecnologia acessível</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for scroll animations
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // WhatsApp click tracking
+        document.querySelector('a[href^="https://wa.me"]').addEventListener('click', function() {
+            console.log('WhatsApp link clicked');
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95ff0f58d797274f',t:'MTc1MjY0MzMyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
